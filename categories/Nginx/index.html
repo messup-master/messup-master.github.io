@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: aws | 삽질 마스터의 개발 블로그</title>
+    <title>Category: Nginx | 삽질 마스터의 개발 블로그</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta property="og:type" content="website">
 <meta property="og:title" content="삽질 마스터의 개발 블로그">
-<meta property="og:url" content="https://messup-master.github.io/messup-master/messup-master.github.io/tags/aws/index.html">
+<meta property="og:url" content="https://messup-master.github.io/messup-master/messup-master.github.io/categories/Nginx/index.html">
 <meta property="og:site_name" content="삽질 마스터의 개발 블로그">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="삽질 마스터의 개발 블로그">
@@ -113,7 +113,7 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>Tag: <em>aws</em>
+    <i class="icon fa fa-folder-open"></i>Category: <em class="page-title-link">Nginx</em>
     </h1>
 </div>
                         <div class="main-body-content">
@@ -138,21 +138,22 @@
         
         <div class="article-meta">
             <div class="category">
-            <a class="article-category-link" href="/categories/AWS/">AWS</a>
+            <a class="article-category-link" href="/categories/Nginx/">Nginx</a>
             </div>
-            <div class="date"><time datetime="2017-04-04T10:00:25.000Z" itemprop="datePublished">2017-04-04</time></div>
+            <div class="date"><time datetime="2017-04-05T02:52:25.000Z" itemprop="datePublished">2017-04-05</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2017/04/04/aws-elb-health-check-nginx/">aws-elb-health-check-nginx</a>
+        <a href="/2017/04/05/nginx-httptohttps/">nginx-httptohttps</a>
         </h1>
     
 
         <p class="article-excerpt">
-            AWS ELB 사용시 Nginx WebServer를 사용하여 Health Check를 간단하게 해보자
-(Ubuntu 기준으로 설명)nginx에 Health Check 위한 Domain를 추가하자./etc/nginx/sites-available 폴더로 이동하여 신규 파일을 생성한다. (vi, vim, nano등 상관없음)
-12345678910server &#
+            Nginx의 Server Layer Domain 설정에 Location 안에 아래 코드를 추가 한다.
+123if ($http_x_forwarded_proto != "https") &#123;  rewrite ^(.*)$ https://$host$1 permanent;&#125;
+서버 재가동후 확인 해 보자1$ service nginx restart
+또는1$
         </p>
     </div>
 </article>
@@ -162,6 +163,7 @@
 
 
     </div></section>
+
 
 
 
