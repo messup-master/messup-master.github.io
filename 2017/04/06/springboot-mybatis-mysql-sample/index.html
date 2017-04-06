@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>aws-elb-health-check-nginx | 삽질 마스터의 개발 블로그</title>
+    <title>Spring Boot + Mybatis + Mysql 설정하기 | 삽질 마스터의 개발 블로그</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="aws,elb,nginx" />
+        <meta name="keywords" content="java,springboot,springframework,mybatis,mysql" />
     
-    <meta name="description" content="AWS ELB 사용시 Nginx WebServer를 사용하여 Health Check를 간단하게 해보자 (Ubuntu 기준으로 설명)nginx에 Health Check 위한 Domain를 추가하자./etc/nginx/sites-available 폴더로 이동하여 신규 파일을 생성한다. (vi, vim, nano등 상관없음) 12345678910server &amp;#">
-<meta name="keywords" content="aws,elb,nginx">
+    <meta name="description" content="Spring Boot와 Mybatis, Mysql를 이용하여 간단한 서버 구성을 해보자 Intellij 기준 File &amp;gt; New &amp;gt; New Project 선택한다.다음과 같은 화면이 보일것이다.  왼쪽메뉴칸에 Spring Initializr를 선택후 Project SDK(JAVA JDK 버전) 설정Initializr Service URL 주소를">
+<meta name="keywords" content="java,springboot,springframework,mybatis,mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="aws-elb-health-check-nginx">
-<meta property="og:url" content="https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/04/aws-elb-health-check-nginx/index.html">
+<meta property="og:title" content="Spring Boot + Mybatis + Mysql 설정하기">
+<meta property="og:url" content="https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/06/springboot-mybatis-mysql-sample/index.html">
 <meta property="og:site_name" content="삽질 마스터의 개발 블로그">
-<meta property="og:description" content="AWS ELB 사용시 Nginx WebServer를 사용하여 Health Check를 간단하게 해보자 (Ubuntu 기준으로 설명)nginx에 Health Check 위한 Domain를 추가하자./etc/nginx/sites-available 폴더로 이동하여 신규 파일을 생성한다. (vi, vim, nano등 상관없음) 12345678910server &amp;#">
-<meta property="og:image" content="https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/04/aws-elb-health-check-nginx/96C3A043592D2B776A5B5F0254470897.png">
-<meta property="og:updated_time" content="2017-04-05T01:58:00.000Z">
+<meta property="og:description" content="Spring Boot와 Mybatis, Mysql를 이용하여 간단한 서버 구성을 해보자 Intellij 기준 File &amp;gt; New &amp;gt; New Project 선택한다.다음과 같은 화면이 보일것이다.  왼쪽메뉴칸에 Spring Initializr를 선택후 Project SDK(JAVA JDK 버전) 설정Initializr Service URL 주소를">
+<meta property="og:image" content="https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/06/springboot-mybatis-mysql-sample/resources/6950B29A37E2050FCB5FE22E8BAA9061.png">
+<meta property="og:updated_time" content="2017-04-06T10:39:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="aws-elb-health-check-nginx">
-<meta name="twitter:description" content="AWS ELB 사용시 Nginx WebServer를 사용하여 Health Check를 간단하게 해보자 (Ubuntu 기준으로 설명)nginx에 Health Check 위한 Domain를 추가하자./etc/nginx/sites-available 폴더로 이동하여 신규 파일을 생성한다. (vi, vim, nano등 상관없음) 12345678910server &amp;#">
-<meta name="twitter:image" content="https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/04/aws-elb-health-check-nginx/96C3A043592D2B776A5B5F0254470897.png">
+<meta name="twitter:title" content="Spring Boot + Mybatis + Mysql 설정하기">
+<meta name="twitter:description" content="Spring Boot와 Mybatis, Mysql를 이용하여 간단한 서버 구성을 해보자 Intellij 기준 File &amp;gt; New &amp;gt; New Project 선택한다.다음과 같은 화면이 보일것이다.  왼쪽메뉴칸에 Spring Initializr를 선택후 Project SDK(JAVA JDK 버전) 설정Initializr Service URL 주소를">
+<meta name="twitter:image" content="https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/06/springboot-mybatis-mysql-sample/resources/6950B29A37E2050FCB5FE22E8BAA9061.png">
     
 
     
@@ -122,18 +122,18 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/AWS/">AWS</a>
+    <a class="page-title-link" href="/categories/SpringBoot/">SpringBoot</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-aws-elb-health-check-nginx" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-springboot-mybatis-mysql-sample" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        aws-elb-health-check-nginx
+        Spring Boot + Mybatis + Mysql 설정하기
         </h1>
     
 
@@ -143,32 +143,65 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/04/04/aws-elb-health-check-nginx/" class="article-date">
-            <time datetime="2017-04-04T10:00:25.000Z" itemprop="datePublished">2017-04-04</time>
+        <a href="/2017/04/06/springboot-mybatis-mysql-sample/" class="article-date">
+            <time datetime="2017-04-06T10:28:21.000Z" itemprop="datePublished">2017-04-06</time>
         </a>
     </div>
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/aws/">aws</a>, <a class="tag-link" href="/tags/elb/">elb</a>, <a class="tag-link" href="/tags/nginx/">nginx</a>
+        <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/mybatis/">mybatis</a>, <a class="tag-link" href="/tags/mysql/">mysql</a>, <a class="tag-link" href="/tags/springboot/">springboot</a>, <a class="tag-link" href="/tags/springframework/">springframework</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>AWS ELB 사용시 Nginx WebServer를 사용하여 Health Check를 간단하게 해보자</p>
-<p><strong>(Ubuntu 기준으로 설명)</strong><br>nginx에 Health Check 위한 Domain를 추가하자.<br><strong>/etc/nginx/sites-available</strong> 폴더로 이동하여 신규 파일을 생성한다. (vi, vim, nano등 상관없음)</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="section">server</span> &#123; </div><div class="line"></div><div class="line">  <span class="attribute">listen</span> <span class="number">80</span> default_server;</div><div class="line">  <span class="attribute">server_name</span> <span class="string">""</span>; </div><div class="line"></div><div class="line">  <span class="attribute">location</span> /health &#123;</div><div class="line">    <span class="attribute">return</span> <span class="number">200</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>위의 문자를 작성하고 저장한다. (이글에서는 health_check로 저장함)</p>
-<p><strong>/etc/nginx/sites-enabled</strong>로 이동하여 심볼릭 링크를 걸어준다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ln -s /etc/nginx/sites-available/health_check /etc/nginx/sites-enabled</div></pre></td></tr></table></figure></p>
-<p><strong>ls</strong> 실행하여 위의 파일이 보인다면 완료!</p>
-<p>그리고 AWS ELB로 가서</p>
-<p><img src="96C3A043592D2B776A5B5F0254470897.png" alt=""></p>
-<p>위 같이 설정 한다.</p>
-<p><img src="F6DC01452EC083066694C04069651BB0.png" alt=""></p>
-<p>빨간색으로 표시 부분이 Inservice로 나온다면 성공!</p>
+            <p>Spring Boot와 Mybatis, Mysql를 이용하여 간단한 서버 구성을 해보자</p>
+<p>Intellij 기준 <strong>File &gt; New &gt; New Project</strong> 선택한다.<br>다음과 같은 화면이 보일것이다.</p>
+<p><img src="resources/6950B29A37E2050FCB5FE22E8BAA9061.png" alt=""></p>
+<p>왼쪽메뉴칸에 <code>Spring Initializr</code>를 선택후 Project SDK(JAVA JDK 버전) 설정<br><code>Initializr Service URL</code> 주소를 <strong><a href="https://start.spring.io" target="_blank" rel="external">https://start.spring.io</a></strong> 해주고 <code>Next</code> 클릭!</p>
+<p>다음 화면으로 이동</p>
+<p><img src="resources/1C53BB7DE1484E8C4CC1EF7256493091.png" alt=""></p>
+<p><code>Group</code>,<code>Artifact</code> 편한대로 작성해 주시고<br><code>Type</code> 은 Gradle로 <code>Packaging</code>은 War로 해주시고 <code>Next</code> 클릭!.<br><code>Type</code>과 <code>Packaging</code> 바꾸는 이유는<br><code>Maven</code> 대신 <code>Gradle</code> 사용할것이고 <code>War</code>로 만들어<br>외부 톰캣으로 구동할것입니다.<br>임베디드 톰캣을 사용하실분들은 <code>Jar</code>로 해주시면되요.</p>
+<p>다음 화면으로 이동</p>
+<p><img src="resources/6CD01EE9AABAB557AB9A56390AA63574.png" alt=""></p>
+<p><img src="resources/F495E6C9833759CC3FA62CF75A468EFE.png" alt=""></p>
+<p><strong><em>Web</em></strong>, <strong><em>SQL</em></strong> 탭목록으로 가셔서 빨간색으로 된부분들을 체크해 주세요.</p>
+<p><img src="resources/9270B30ED5909C4178349778D067CE82.png" alt=""></p>
+<p>프로젝트 폴더 위치 지정입니다. 편하신대로 해주시고 <code>Finish</code> 버튼 눌러주세요.</p>
+<p>저랑 같은 방식으로 하셨다면 이런 폴더 구조이실꺼에요</p>
+<p><img src="resources/91D0ADC2A8C9F009C8A4707F0958A78A.png" alt=""></p>
+<p>이제 build.gradle 파일을 확인해 보죠</p>
+<p><img src="resources/42529BFB81BE3670356800BB249A2AF1.png" alt=""></p>
+<p>몇가지만 살펴 봅시다.</p>
+<ul>
+<li><code>apply plugin: &#39;war&#39;</code> : war 배포로 하셨다면 있어야 됩니다.</li>
+<li><code>compile(&#39;org.springframework.boot:spring-boot-starter-jdbc&#39;)</code> : 데이터베이스 연결에 필요한 jdbc lib</li>
+<li><code>compile(&#39;org.mybatis.spring.boot:mybatis-spring-boot-starter:1.2.0&#39;)</code> : mybatis 관련 lib</li>
+<li><code>compile(&#39;org.springframework.boot:spring-boot-starter-web&#39;)</code> :  WebSerivce에 필요한 lib</li>
+<li><code>runtime(&#39;mysql:mysql-connector-java&#39;)</code> : mysql connector lib</li>
+</ul>
+<p>위에 적은 내용들은 있어야 합니다.</p>
+<p>이제 <code>springBoot</code> 설정을 해봅시다.<br>기존 설정 파일은 <code>properties</code>로 되어 있지만 저는 <code>yaml</code>이란 걸로 해볼께요</p>
+<p><code>yaml
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sample
+    username: root
+    password: 1234</code><br><code>url</code>, <code>username</code>, <code>password</code>는 개인 구축상황에 따라 변경해 주세요.</p>
+<p>그럼 빠르게 <code>Controller</code> <code>Mapper</code>만들어 봅시다.(귀찮아서 Model은 생략 했습니다.)</p>
+<h5 id="SampleController-java"><a href="#SampleController-java" class="headerlink" title="SampleController.java"></a>SampleController.java</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@RestController</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SampleController</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="meta">@Autowired</span></div><div class="line">  <span class="keyword">private</span> SampleMapper sampleMapper;</div><div class="line"></div><div class="line">  <span class="meta">@RequestMapping</span>(<span class="string">"/"</span>)</div><div class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> <span class="string">"Hello Spring Boot!"</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="meta">@RequestMapping</span>(value = <span class="string">"/users"</span>, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)</div><div class="line">  <span class="keyword">public</span> List&lt;Map&lt;String, Object&gt;&gt; getUserList() &#123;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> sampleMapper.selelctUserList();</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="meta">@RequestMapping</span>(value = <span class="string">"/users/&#123;userId&#125;"</span>, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)</div><div class="line">  <span class="function"><span class="keyword">public</span> Map&lt;String, Object&gt; <span class="title">getUserDetail</span><span class="params">(</span></span></div><div class="line">    @PathVariable String userId</div><div class="line">  ) &#123;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> sampleMapper.selectUserByUserId(userId);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h5 id="SampleMapper-java"><a href="#SampleMapper-java" class="headerlink" title="SampleMapper.java"></a>SampleMapper.java</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Mapper</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">SampleMapper</span> </span>&#123;</div><div class="line"></div><div class="line">  <span class="meta">@Select</span>(<span class="string">"SELECT id, name FROM user"</span>)</div><div class="line">  <span class="keyword">public</span> List&lt;Map&lt;String, Object&gt;&gt; selelctUserList();</div><div class="line"></div><div class="line">  <span class="meta">@Select</span>(<span class="string">"SELECT id, name FROM user WHERE id = #&#123;userId&#125;"</span>)</div><div class="line">  <span class="function"><span class="keyword">public</span> Map&lt;String, Object&gt; <span class="title">selectUserByUserId</span><span class="params">(@Param(<span class="string">"userId"</span>)</span>String userId)</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>전체 적인 모습</p>
+<p><img src="resources/C3675333DBB9E63C71229EC81B0DD625.png" alt=""></p>
+<p>이제 서버를 실행 시켜 보자!!</p>
+<p><img src="resources/74129A197A208854E7A4C44604D6AEB7.png" alt=""></p>
+<p>대략 이렇게 나오면<br>이제 브라우저로 가 실행 확인해보자</p>
+<p><img src="resources/F45056F83D48F84C5129FA7ADEC835B6.png" alt=""></p>
+<p>성공!</p>
 
         </div>
         <footer class="article-footer">
@@ -176,7 +209,7 @@
 
 
 
-    <a data-url="https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/04/aws-elb-health-check-nginx/" data-id="cj169u0d30000y20h9gi0z3e8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/06/springboot-mybatis-mysql-sample/" data-id="cj169u0dd0004y20hxoyszeep" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -281,12 +314,16 @@
         
 <nav id="article-nav">
     
+        <a href="/2017/04/05/nginx-httptohttps/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            nginx-httptohttps
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
     
-        <a href="/2017/04/05/nginx-httptohttps/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">nginx-httptohttps</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
     
 </nav>
 
@@ -360,7 +397,7 @@
     var disqus_shortname = 'https-messup-master-github-io-blog';
     
     
-    var disqus_url = 'https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/04/aws-elb-health-check-nginx/';
+    var disqus_url = 'https://messup-master.github.io/messup-master/messup-master.github.io/2017/04/06/springboot-mybatis-mysql-sample/';
     
     (function() {
     var dsq = document.createElement('script');
